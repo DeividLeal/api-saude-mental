@@ -14,7 +14,7 @@ A API de Apoio à Saúde Mental Comunitária fornece funcionalidades simples que
   Retorna uma lista de práticas de autocuidado.
 
 - `GET /apoio-psicologico`  
-  Retorna contatos e informações de apoio emocional (ex: CVV, CAPS).
+  Retorna contatos e informações de apoio emocional (ex.: CVV, CAPS).
 
 - `GET /frases-motivacionais`  
   Retorna uma frase motivacional aleatória.
@@ -35,6 +35,20 @@ A API de Apoio à Saúde Mental Comunitária fornece funcionalidades simples que
 
 1. Clone o repositório:
 
-```bash
-git clone https://github.com/DeividLeal/api-saude-mental
-```
+   ```bash
+   git clone https://github.com/DeividLeal/api-saude-mental
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie a aplicação:
+
+   ```bash
+   npm start
+   ```
+
+4. Acesse: [http://localhost:3000](http://localhost:3000)
