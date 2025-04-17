@@ -1,19 +1,21 @@
 {
   "name": "api-saude-mental",
   "version": "1.0.0",
-  "description": "API de Apoio à Saúde Mental Comunitária com funcionalidades de autocuidado, frases motivacionais, apoio psicológico, respiração guiada e criptografia de mensagens.",
-  "main": "app.js",
+  "description": "API de apoio à saúde mental comunitária com funcionalidades como autocuidado, frases motivacionais, apoio psicológico, respiração guiada e criptografia de mensagens.",
+  "main": "serve.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node serve.js",
+    "dev": "nodemon serve.js"
   },
-  "keywords": [],
+  "keywords": ["saude-mental", "api", "autocuidado", "motivacao", "psicologia"],
   "author": "Deivid Caldas",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.9"
   }
 }
