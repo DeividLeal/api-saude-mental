@@ -1,5 +1,5 @@
 import express from 'express';
-import { listarApoioPsicologico } from '../controllers/apoioController.js';
+import { listarApoioPsicologico } from '../controllers/apoio.controller.js';
 
 const router = express.Router();
 

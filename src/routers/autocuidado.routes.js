@@ -1,10 +1,10 @@
 import express from 'express';
-import { listarPraticasAutocuidado } from '../controllers/autocuidadoController.js';
+import { obterPraticasAutocuidado } from '../controllers/autocuidado.controller.js';
 
 const router = express.Router();
 
 // Rota para listar práticas de autocuidado
-router.get('/', listarPraticasAutocuidado);
+router.get('/', obterPraticasAutocuidado);
 
 export default router;
 
