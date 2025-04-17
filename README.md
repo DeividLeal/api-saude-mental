@@ -22,9 +22,6 @@ A API de Apoio à Saúde Mental Comunitária fornece funcionalidades simples que
 - `GET /exercicio-respiracao`  
   Retorna um passo a passo de exercício de respiração guiada.
 
-- `GET /criptografar?mensagem=texto`  
-  Retorna o texto criptografado em Base64 (útil para privacidade de mensagens).
-
 ## 💻 Tecnologias Utilizadas
 
 - Node.js
