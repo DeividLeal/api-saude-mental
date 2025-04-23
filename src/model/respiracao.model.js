@@ -13,7 +13,7 @@ export class ExerciciosRespiracao {
   }
 
   listarExercicios() {
-    return [...this.exercicios]; // Return a copy to avoid accidental mutations
+    return [...this.exercicios]; // Retorne uma cópia para evitar mutações acidentais
   }
 }
 
