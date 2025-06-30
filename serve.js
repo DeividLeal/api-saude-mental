@@ -1,5 +1,6 @@
 // Importa o framework Express
 import express from 'express';
+import cors from 'cors';
 
 // Importa as rotas de diferentes funcionalidades
 import autocuidadoRoutes from './src/routers/autocuidado.routes.js';
@@ -14,14 +15,18 @@ const app = express();
 // Define a porta do servidor (padrão 3000 ou definida no ambiente)
 const PORT = process.env.PORT || 3000;
 
+// <<< MUDANÇA 2: Use o cors ANTES das suas rotas.
+// Isso vai permitir que seu frontend (rodando em outra porta) acesse a API.
+app.use(cors());
+
 // Middleware para interpretar requisições com JSON
 app.use(express.json());
 
 // Define as rotas para cada funcionalidade
-app.use('/apoio-psicologico', apoioRoutes);               // Rotas para apoio psicológico
-app.use('/autocuidado', autocuidadoRoutes);               // Rotas relacionadas ao autocuidado
-app.use('/frases-motivacionais', frasesRoutes);           // Rotas para frases motivacionais
-app.use('/exercicio-respiracao', respiracaoRoutes);       // Rotas para exercícios de respiração
+app.use('/apoio-psicologico', apoioRoutes);         // Rotas para apoio psicológico
+app.use('/autocuidado', autocuidadoRoutes);           // Rotas relacionadas ao autocuidado
+app.use('/frases-motivacionais', frasesRoutes);       // Rotas para frases motivacionais
+app.use('/exercicio-respiracao', respiracaoRoutes);   // Rotas para exercícios de respiração
 
 
 // Rota principal (raiz) para exibir uma mensagem de boas-vindas

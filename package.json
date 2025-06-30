@@ -9,10 +9,17 @@
     "start": "node serve.js",
     "dev": "nodemon serve.js"
   },
-  "keywords": ["saude-mental", "api", "autocuidado", "motivacao", "psicologia"],
+  "keywords": [
+    "saude-mental",
+    "api",
+    "autocuidado",
+    "motivacao",
+    "psicologia"
+  ],
   "author": "Deivid Caldas",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
