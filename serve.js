@@ -15,9 +15,8 @@ const app = express();
 // Define a porta do servidor (padrão 3000 ou definida no ambiente)
 const PORT = process.env.PORT || 3000;
 
-// <<< MUDANÇA 2: Use o cors ANTES das suas rotas.
-// Isso vai permitir que seu frontend (rodando em outra porta) acesse a API.
-import cors from 'cors';
+// <<< REMOVA ESTA LINHA DUPLICADA >>>
+// import cors from 'cors';
 app.use(cors());
 
 // Middleware para interpretar requisições com JSON
